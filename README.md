@@ -14,6 +14,12 @@ It currently looks like this:
 
 When compiling the less files yourself, simply compile /flatstrap.less and it should import all it needs.
 
+Examples
+--------
+To help quickly get stuff styled, I copied some files from Bootstrap's doc directory and placed them in /flatstrap/examples.
+Remember, everything's still a work in progress.
+
+
 Contributing
 ------------
 I'd really appreciate all the help I can get.
