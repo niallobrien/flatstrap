@@ -11,6 +11,8 @@
   .box-shadow(none);
   text-shadow: none;
   border: none;
+  color: @white;
+  font-weight: 300;
 
 // Hover/focus state
   &:hover,
@@ -18,7 +20,7 @@
     color: @grayDark;
     text-decoration: none;
     background-position: 0 -15px;
-    .buttonBackground(@btnHoverBackground, @btnHoverBackground, @white, 0 1px 1px rgba(255,255,255,.75));
+    .buttonBackground(@btnHoverBackground, @btnHoverBackground, @white, 0);
     text-shadow: none;
 
 
@@ -38,6 +40,7 @@
     background-image: none;
     outline: 0;
     .box-shadow(none);
+    color: @white;
   }
 
 // Disabled state
@@ -135,47 +138,61 @@ input[type="button"] {
 .btn-primary {
   .buttonBackground(@btnPrimaryBackground, @btnPrimaryBackgroundHighlight);
   &:hover {
-    .buttonBackground(@btnPrimaryHoverBackground, @btnPrimaryHoverBackground, @white, 0 1px 1px rgba(255,255,255,.75));
+    .buttonBackground(@btnPrimaryHoverBackground, @btnPrimaryHoverBackground, 0);
     text-shadow: none;
   }
 }
 // Warning appears are orange
 .btn-warning {
   .buttonBackground(@btnWarningBackground, @btnWarningBackgroundHighlight);
+  text-shadow: none;
   &:hover {
-    .buttonBackground(@btnWarningHoverBackground, @btnWarningHoverBackground, @white, 0 1px 1px rgba(255,255,255,.75));
+    .buttonBackground(@btnWarningHoverBackground, @btnWarningHoverBackground, 0);
     text-shadow: none;
   }
 }
 // Danger and error appear as red
 .btn-danger {
   .buttonBackground(@btnDangerBackground, @btnDangerBackgroundHighlight);
+  text-shadow: none;
   &:hover {
-    .buttonBackground(@btnDangerHoverBackground, @btnDangerHoverBackground, @white, 0 1px 1px rgba(255,255,255,.75));
+    .buttonBackground(@btnDangerHoverBackground, @btnDangerHoverBackground, 0);
     text-shadow: none;
   }
 }
 // Success appears as green
 .btn-success {
   .buttonBackground(@btnSuccessBackground, @btnSuccessBackgroundHighlight);
+  text-shadow: none;
   &:hover {
-    .buttonBackground(@btnSuccessHoverBackground, @btnSuccessHoverBackground, @white, 0 1px 1px rgba(255,255,255,.75));
+    .buttonBackground(@btnSuccessHoverBackground, @btnSuccessHoverBackground, 0);
     text-shadow: none;
   }
 }
 // Info appears as a neutral blue
 .btn-info {
   .buttonBackground(@btnInfoBackground, @btnInfoBackgroundHighlight);
+  text-shadow: none;
   &:hover {
-    .buttonBackground(@btnInfoHoverBackground, @btnInfoHoverBackground, @white, 0 1px 1px rgba(255,255,255,.75));
+    .buttonBackground(@btnInfoHoverBackground, @btnInfoHoverBackground, @white, 0);
     text-shadow: none;
   }
 }
 // Inverse appears as dark gray
 .btn-inverse {
   .buttonBackground(@btnInverseBackground, @btnInverseBackgroundHighlight);
+  text-shadow: none;
   &:hover {
-    .buttonBackground(@btnInverseHoverBackground, @btnInverseHoverBackground, @white, 0 1px 1px rgba(255,255,255,.75));
+    .buttonBackground(@btnInverseHoverBackground, @btnInverseHoverBackground, @white, 0);
+    text-shadow: none;
+  }
+}
+
+// Button link
+.btn-link {
+  text-shadow: none;
+  &:hover {
+    .buttonBackground(@btnBackground, @btnBackground, @linkColor, 0);
     text-shadow: none;
   }
 }
