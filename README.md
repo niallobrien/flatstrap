@@ -10,7 +10,7 @@ Clone Flatstrap, change into the directory and clone Bootstrap.
 	git clone git://github.com/twitter/bootstrap.git
 
 It currently looks like this:
-(http://dl.dropbox.com/u/14373373/Screenshots/1v.png?raw=true)
+![Flatstrap](http://dl.dropbox.com/u/14373373/Screenshots/1v.png?raw=true)
 
 When compiling the less files yourself, simply compile /flatstrap.less and it should import all it needs.
 
