@@ -5741,6 +5741,7 @@ select:focus:invalid:focus {
   -moz-border-radius: 0 4px 4px 0;
   border-radius: 0 4px 4px 0;
   border-color: #34495e;
+  padding: 3px;
 }
 .input-append input:focus,
 .input-prepend input:focus,
