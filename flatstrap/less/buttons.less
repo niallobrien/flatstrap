@@ -8,6 +8,7 @@
 
 // Core
 .btn {
+  padding: 5px 12px;
   .box-shadow(none);
   text-shadow: none;
   border: none;
@@ -27,11 +28,6 @@
   // transition is only when going to hover/focus, otherwise the background
   // behind the gradient (there for IE<=9 fallback) gets mismatched
     .transition(background-position .1s linear);
-  }
-
-// Focus state for keyboard and accessibility
-  &:focus {
-    .tab-focus();
   }
 
 // Active state
@@ -93,45 +89,6 @@
 }
 
 
-// Block button
-// -------------------------
-
-.btn-block {
-  display: block;
-  width: 100%;
-  padding-left: 0;
-  padding-right: 0;
-  .box-sizing(border-box);
-}
-
-// Vertically space out multiple block buttons
-.btn-block + .btn-block {
-  margin-top: 5px;
-}
-
-// Specificity overrides
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-  &.btn-block {
-    width: 100%;
-  }
-}
-
-
-
-// Alternate buttons
-// --------------------------------------------------
-
-// Provide *some* extra contrast for those who can get it
-.btn-primary.active,
-.btn-warning.active,
-.btn-danger.active,
-.btn-success.active,
-.btn-info.active,
-.btn-inverse.active {
-  color: rgba(255,255,255,.75);
-}
 
 // Set the backgrounds
 // -------------------------
@@ -142,7 +99,7 @@ input[type="button"] {
     text-shadow: none;
   }
 }
-// Warning appears are orange
+// Warning appears as orange
 .btn-warning {
   .buttonBackground(@btnWarningBackground, @btnWarningBackgroundHighlight);
   text-shadow: none;
@@ -188,47 +145,6 @@ input[type="button"] {
   }
 }
 
-// Button link
-.btn-link {
-  text-shadow: none;
-  &:hover {
-    .buttonBackground(@btnBackground, @btnBackground, @linkColor, 0);
-    text-shadow: none;
-  }
-}
-
-
-// Cross-browser Jank
-// --------------------------------------------------
-
-button.btn,
-input[type="submit"].btn {
-
-// Firefox 3.6 only I believe
-  &::-moz-focus-inner {
-    padding: 0;
-    border: 0;
-  }
-
-// IE7 has some default padding on button controls
-  *padding-top: 3px;
-  *padding-bottom: 3px;
-
-  &.btn-large {
-    *padding-top: 7px;
-    *padding-bottom: 7px;
-  }
-  &.btn-small {
-    *padding-top: 3px;
-    *padding-bottom: 3px;
-  }
-  &.btn-mini {
-    *padding-top: 1px;
-    *padding-bottom: 1px;
-  }
-}
-
-
 // Link buttons
 // --------------------------------------------------
 
@@ -245,12 +161,14 @@ input[type="submit"].btn {
   cursor: pointer;
   color: @linkColor;
   .border-radius(0);
+  text-shadow: none;
 }
 .btn-link:hover,
 .btn-link:focus {
   color: @linkColorHover;
   text-decoration: underline;
   background-color: transparent;
+  background-image: none;
 }
 .btn-link[disabled]:hover,
 .btn-link[disabled]:focus {
