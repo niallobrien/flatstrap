@@ -18,6 +18,9 @@
     color: @grayDark;
     text-decoration: none;
     background-position: 0 -15px;
+    .buttonBackground(@btnHoverBackground, @btnHoverBackground, @white, 0 1px 1px rgba(255,255,255,.75));
+    text-shadow: none;
+
 
   // transition is only when going to hover/focus, otherwise the background
   // behind the gradient (there for IE<=9 fallback) gets mismatched
@@ -131,26 +134,50 @@ input[type="button"] {
 // -------------------------
 .btn-primary {
   .buttonBackground(@btnPrimaryBackground, @btnPrimaryBackgroundHighlight);
+  &:hover {
+    .buttonBackground(@btnPrimaryHoverBackground, @btnPrimaryHoverBackground, @white, 0 1px 1px rgba(255,255,255,.75));
+    text-shadow: none;
+  }
 }
 // Warning appears are orange
 .btn-warning {
   .buttonBackground(@btnWarningBackground, @btnWarningBackgroundHighlight);
+  &:hover {
+    .buttonBackground(@btnWarningHoverBackground, @btnWarningHoverBackground, @white, 0 1px 1px rgba(255,255,255,.75));
+    text-shadow: none;
+  }
 }
 // Danger and error appear as red
 .btn-danger {
   .buttonBackground(@btnDangerBackground, @btnDangerBackgroundHighlight);
+  &:hover {
+    .buttonBackground(@btnDangerHoverBackground, @btnDangerHoverBackground, @white, 0 1px 1px rgba(255,255,255,.75));
+    text-shadow: none;
+  }
 }
 // Success appears as green
 .btn-success {
   .buttonBackground(@btnSuccessBackground, @btnSuccessBackgroundHighlight);
+  &:hover {
+    .buttonBackground(@btnSuccessHoverBackground, @btnSuccessHoverBackground, @white, 0 1px 1px rgba(255,255,255,.75));
+    text-shadow: none;
+  }
 }
 // Info appears as a neutral blue
 .btn-info {
   .buttonBackground(@btnInfoBackground, @btnInfoBackgroundHighlight);
+  &:hover {
+    .buttonBackground(@btnInfoHoverBackground, @btnInfoHoverBackground, @white, 0 1px 1px rgba(255,255,255,.75));
+    text-shadow: none;
+  }
 }
 // Inverse appears as dark gray
 .btn-inverse {
   .buttonBackground(@btnInverseBackground, @btnInverseBackgroundHighlight);
+  &:hover {
+    .buttonBackground(@btnInverseHoverBackground, @btnInverseHoverBackground, @white, 0 1px 1px rgba(255,255,255,.75));
+    text-shadow: none;
+  }
 }
 
 
