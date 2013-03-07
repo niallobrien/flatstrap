@@ -5739,7 +5739,7 @@ select:focus:invalid:focus {
   -webkit-border-radius: 0 4px 4px 0;
   -moz-border-radius: 0 4px 4px 0;
   border-radius: 0 4px 4px 0;
-  border-color: #2c3e50;
+  border-color: #34495e;
 }
 .input-append input:focus,
 .input-prepend input:focus,
@@ -5757,12 +5757,13 @@ select:focus:invalid:focus {
   min-width: 16px;
   padding: 4px 5px;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 300;
   line-height: 20px;
   text-align: center;
-  text-shadow: 0 1px 0 #ffffff;
-  background-color: #eeeeee;
-  border: 1px solid #ccc;
+  text-shadow: none;
+  background-color: #34495e;
+  border: 1px solid #34495e;
+  color: #ffffff;
 }
 .input-append .add-on,
 .input-prepend .add-on,
